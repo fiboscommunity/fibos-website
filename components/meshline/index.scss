@@ -1,0 +1,63 @@
+.meshline {
+  height: 100%;
+  position: relative;
+  background: #000;
+  .mainSubtitle {
+    color: #fff;
+    z-index: 250;
+    position: absolute;
+    font-size: 26px;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    transition: opacity 0.5s;
+    letter-spacing: 10px;
+  }
+  .hidden {
+      transform: translate(-50%, 10%);
+      opacity: 0.01;
+      bottom: 100px !important;
+  }
+  .subtitle {
+    color: #fff;
+    z-index: 250;
+    position: absolute;
+    font-size: 26px;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 10px;
+    transition: opacity 0.5s;
+  }
+  .nextpage {
+      z-index: 250;
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      width: 35px;
+      height: 35px;
+      transform: translate(-50%);
+      transition: opacity 0.5s, bottom 0.5s;
+      transition-delay: 0.5s;
+  }
+  .nextpage > img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .mainSubtitle, .subtitle {
+      font-size: 18px;
+      letter-spacing: 5px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+

@@ -1,0 +1,141 @@
+a, a:active, a:focus, a:hover{
+  color: #08c;
+  outline: none;
+  text-decoration: none;
+}
+
+.doc-container .container {
+    width: 100%;
+    max-width: 100%;
+    font-family: Avenir, Segoe UI, Arial, Hiragino Sans GB, 冬青黑, Microsoft YaHei, 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
+}
+
+.band .group {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+  width: 20px !important; 
+}
+
+.doc-container .breadcrumb {
+  background-color: transparent;
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+.trending-title {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+    font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.charts {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+}
+
+@media (max-width: 769px) {
+  .charts {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 479px) {
+    body {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 29px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+   
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+   }
+    pre code {
+      font-size: 11px;
+    }
+    .social-share {
+      zoom: 80%;
+    }
+    .navbar-default {
+      height: 65px;
+    }
+    .navbar-default .navbar-brand img {
+      margin-top: -15px;
+      width: 120px;
+    }
+    .navbar-default .navbar-brand {
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    .navbar-default .navbar-toggle {
+      margin-top: 10px;
+    }
+    .band {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .band .group {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .page-body {
+      background-color: transparent;
+      border-top: 2px solid #f4f4f4;
+      padding-top: 10px;
+    }
+    .home-os {
+      font-size: 40px;
+      padding: 0px;
+    }
+    .content {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .doc-container .breadcrumb {
+      font-size: 12px;
+      padding: 10px 0px;
+    }
+
+    // .trending-title {
+    //   font-size: 22px;
+    // }
+
+    .news-item h4{
+      font-size: 16px;
+    }
+  }
+
+
+
+
+
+
+  .doc-container .breadcrumb li+li:before {
+    padding: 0 5px 0 5px;
+    content: '/';
+  }
+
+
+  .doc-container .page-body {
+    background-color: #f4f4f4;
+    padding: 20px 0px;
+    min-height: 700px;
+  }

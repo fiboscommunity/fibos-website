@@ -1,0 +1,56 @@
+
+.trending-map {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+    // @media (max-width: 576px) {
+    //   .trending-title {
+    //     font-size: 22px;
+    //     position: absolute;
+    // top: 10%;
+    // left: 50%;
+    // transform: translate(-50%, -10%);
+    //   }
+    //   .charts {
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     width: 85% !important;
+    //     height: 50vh !important;
+    //     margin: 0 !important;
+    //   }
+    // //   background-image: url('../../imgs/trending.jpg');
+    //     background-attachment: inherit;
+    // }
+    // background-image: url('../../imgs/trending.jpg');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+    background: rgba(111,155,250,0.05);
+    .charts {
+        margin: 0 auto;
+        width: 80%;
+        height: 80vh;
+        @media (max-width:767px) {
+          width: 100%;
+        }
+      }
+  }
+  .trending-title {
+    font-size: 28px;
+    color: #333333;
+    margin-top: 100px;
+    @media (max-width:767px) {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 769px) {
+    .charts {
+      margin: 0 auto;
+      width: 100%;
+      height: 80vh;
+    }
+  }

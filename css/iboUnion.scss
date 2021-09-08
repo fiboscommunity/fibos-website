@@ -1,0 +1,393 @@
+.ibo-union .band .container, .ibo-union .container.navigation {
+    width: 100%;
+    max-width: 100%;
+    font-family: Avenir, Segoe UI, Arial, Hiragino Sans GB, 冬青黑, Microsoft YaHei, 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
+}
+
+
+.ibo-union .page-body {
+    background-color: #f4f4f4;
+    padding: 20px 0px;
+    min-height: 700px;
+  }
+
+.ibo-union .breadcrumb {
+    background-color: transparent;
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0px;
+    margin: 0px;
+  }
+
+.ibo-union .breadcrumb li+li:before {
+    padding: 0 5px 0 5px;
+    content: '/';
+  }
+
+.ibo-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ibo-members {
+    padding: 50px 0;
+}
+
+.ibo-members h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.ibo-bgimg {
+    position: relative;
+}
+
+.ibo-join {
+    padding: 100px 0;
+    background: white;
+}
+
+.ibo-union .pickPage{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.ibo-union .pickPage .pick{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.ibo-union .pickPage .number{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.ibo-union .pickPage .number.active{
+    color: #1098dd
+}
+
+.ibo-tojoin label {
+    font-size: 25px;
+    color: red;
+    margin: 0
+}
+
+.ibo-tojoin {
+    padding: 50px 0;
+}
+
+.ibo-tojoin h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 38px;
+}
+
+.ibo-tojoin h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.ibo-join h2 {
+    font-size: 38px;
+}
+
+.ibo-join h3 {
+    font-size: 32px;
+}
+
+.ibo-join .disc {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.ibo-join h2, .ibo-join h3, .ibo-join .disc {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ibo-join h2, .ibo-join h3 {
+    font-weight: 500;
+}
+
+.ibo-join p {
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.ibo-panel {
+    width: 20%;
+    float: left;
+    padding: 20px 10px;
+}
+
+.ibo-panel a {
+    text-decoration: none;
+}
+
+.ibo-panel a:hover {
+    text-decoration: none;
+}
+
+.ibo-panel a .ibo-name {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.ibo-panel .ibo-content {
+    background: white;
+    box-shadow: 0 5px 10px 0 rgba(51, 51, 51, .1);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.ibo-panel .ibo-content img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.ibo-panel .ibo-content .name {
+    padding: 10px;
+    /* text-align: center; */
+    font-size: 18px;
+    color: black;
+}
+
+.ibo-tojoin .wrap span {
+    font-size: 24px;
+    color: #666666;
+}
+
+.ibo-tojoin .wrap input, .ibo-tojoin .wrap textarea {
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: 0;
+    margin-top: 10px;
+    border: 1px solid #999999;
+}
+
+.ibo-tojoin .wrap p {
+    margin: 0;
+}
+
+.ibo-tojoin .wrap .cityselect {
+    margin-top: 10px;
+}
+
+.ibo-tojoin .wrap select {
+    height: 60px;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+.ibo-tojoin .wrap {
+    margin-bottom: 20px;
+}
+
+.ibo-tojoin .wrap.last {
+    margin-top: 30px;
+}
+
+.ibo-tojoin .wrap button {
+    width: 300px;
+    height: 80px;
+    background: #1098dd;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    outline: 0;
+    cursor: pointer;
+}
+
+.ibo-tojoin .connect-us .wrap {
+    margin: 20px 0;
+}
+
+.ibo-tojoin .connect-us .wrap .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.ibo-tojoin .connect-us .wrap .disc {
+    font-size: 18px;
+    color: #666666;
+}
+
+.ibo-tojoin .connect-us .wrap img {
+    width: 200px;
+}
+
+@media (max-width:992px) {
+    .ibo-panel {
+        width: 25%;
+        padding: 15px;
+    }
+    .ibo-panel a .ibo-name {
+        font-size: 17px;
+    }
+    .ibo-panel .ibo-content .name {
+        font-size: 15px
+    }
+    .ibo-tojoin .wrap span {
+        font-size: 18px;
+    }
+    .ibo-tojoin label {
+        font-size: 18px;
+    }
+    .ibo-tojoin .wrap button {
+        width: 170px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .ibo-panel {
+        width: 33.3%;
+        padding: 15px;
+    }
+    .ibo-panel a .ibo-name {
+        font-size: 15px;
+    }
+    .ibo-panel .ibo-content .name {
+        font-size: 13px
+    }
+    .ibo-tojoin .wrap span {
+        font-size: 16px;
+    }
+    .ibo-tojoin label {
+        font-size: 16px;
+    }
+    .ibo-tojoin .wrap button {
+        width: 170px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:578px) {
+    .ibo-panel {
+        width: 50%;
+        padding: 10px;
+    }
+    .ibo-join {
+        padding: 20px 0;
+    }
+    .ibo-join img {
+        width: 50px;
+    }
+    .ibo-join p {
+        font-size: 12px;
+    }
+    .ibo-members {
+        padding: 35px 0;
+        background: #f4f4f4;
+    }
+    .ibo-join h2, .ibo-tojoin h2, .ibo-members h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .ibo-join h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .ibo-join .disc {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .ibo-tojoin .wrap span {
+        font-size: 12px;
+    }
+    .ibo-tojoin .wrap input {
+        height: 36px;
+        font-size: 12px;
+    }
+    .ibo-tojoin .wrap textarea {
+        height: 36px;
+        font-size: 12px;
+    }
+    .ibo-tojoin .wrap button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .ibo-tojoin .connect-us .wrap .title {
+        font-size: 14px;
+    }
+    .ibo-tojoin .connect-us .wrap .disc {
+        font-size: 12px;
+    }
+    .ibo-tojoin .connect-us .wrap img {
+        width: 100px;
+    }
+    .ibo-tojoin {
+        padding: 20px 0;
+        background: #f4f4f4;
+    }
+    .ibo-panel .ibo-content .name {
+        font-size: 12px;
+    }
+    .ibo-tojoin .connect-us .wrap {
+        margin: 10px 0;
+    }
+    .ibo-tojoin .wrap {
+        margin-bottom: 10px;
+    }
+    .connect-us {
+        margin-top: 10px;
+    }
+    .ibo-tojoin .wrap select {
+        height: 36px;
+        font-size: 12px;
+    }
+    .ibo-tojoin label {
+        font-size: 12px;
+    }
+    .ibo-panel a .ibo-name {
+        font-size: 14px;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box span {
+    cursor: pointer;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    float: left;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.box ul li.pagination-current {
+    color: #1098dd;
+}

@@ -1,0 +1,10 @@
+/node_modules
+/.next
+
+.history/
+.vscode/
+
+yarn.lock
+package-lock.json
+
+zongjie.md

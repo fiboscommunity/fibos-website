@@ -1,0 +1,44 @@
+._modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.65);
+    height: 100%;
+    z-index: 1000;
+}
+
+._modal .wrap{
+    position: relative;
+    height: 100%;
+}
+
+._modal .wrap .content{
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    border-radius: 4px;
+    min-height: 200px;
+    @media (max-width: 576px){
+        width: 350px!important;
+    }
+}
+
+._modal .wrap .content .show{
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+._modal .wrap .content .close_btn{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+

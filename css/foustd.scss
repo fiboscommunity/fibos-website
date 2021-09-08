@@ -1,0 +1,274 @@
+.hidden {
+  display: none;
+}
+.fousdt_body {
+  width: 100%;
+  *,
+  *::after,
+  *::before {
+    box-sizing: content-box;
+    font-family: Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB','Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei';
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+  .myContainer {
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    .myContainer {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  }
+  @media (min-width: 768px) {
+    .myContainer {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .myContainer {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .myContainer {
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .myContainer {
+      width: 1200px;
+    }
+  }
+}
+.foustd_bg {
+  background: radial-gradient(farthest-corner at 50% 50%, #565555, #202027);
+}
+
+.foustd_banner {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background: url('/imgs//foustd_banner.png') 50% 50%/35rem 35rem no-repeat;
+  .foustd_banner_title {
+    width: 100%;
+    text-align: center;
+    word-spacing: 0.75rem;
+    margin: 180px auto 1.875rem;
+    font-size: 3.4375rem;
+    color: #fff;
+    .pc_mobile {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      margin: 230px auto 1.875rem;
+      .pc_banner {
+        display: none;
+      }
+      .pc_mobile {
+        display: inline;
+        font-size: 26px;
+        letter-spacing: 0.93px;
+      }
+    }
+  }
+  .foustd_banner_pro {
+    color: #fff;
+    text-align: center;
+    font-size: 2.1875rem;
+    margin-top: 1.875rem;
+    .mobile_banner {
+      display: none;
+    }
+    .pc_banner {
+      line-height: 2;
+    }
+    @media (max-width: 767px) {
+      margin-top: 2rem;
+      .pc_banner {
+        display: none;
+      }
+      .mobile_banner {
+        display: inline;
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    height: 600px;
+    background: url('/imgs//foustd_banner.png') 50% 50%/30rem 30rem no-repeat;
+    .foustd_banner_title {
+      font-size: 40px;
+    }
+    .foustd_banner_pro {
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 570px;
+    background: url('/imgs//foustd_banner.png') 50% 50%/25rem 25rem no-repeat;
+    .foustd_banner_title {
+      font-size: 32px;
+    }
+    .foustd_banner_pro {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 570px;
+    background: url('/imgs//foustd_banner.png') 50% 50%/304px no-repeat;
+    .foustd_banner_title {
+      font-size: 32px;
+    }
+    .foustd_banner_pro {
+      font-size: 20px;
+    }
+  }
+}
+//feature
+.foustd_feature {
+  width: 100%;
+  .foustd_feature_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      justify-content: space-around;
+      align-content: space-between;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+    }
+    .foustd_feature_item {
+      flex: none;
+      width: 15.625rem;
+      height: 20.625rem;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: -1px 13px 20px 0 #f1f0f4;
+      border-radius: 5px;
+      margin-bottom: 80px;
+      // 超过两行的文本不显示 省略号
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; //（行数）
+      -webkit-box-orient: vertical;
+      .img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .title {
+        font-family: PingFangSC-Medium;
+        font-size: 1.125rem;
+        color: #263238;
+        line-height: 1.5rem;
+        margin-top: 1.875rem;
+      }
+      p:last-child {
+        margin-top: 1rem;
+        padding: 0 1.25rem;
+        text-align: left;
+        line-height: 2em;
+        overflow: hidden;
+      }
+      .third {
+        display: flex;
+        align-items: center;
+        img {
+          height: 62px;
+        }
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 22rem;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 20rem;
+      }
+      @media (max-width: 1199px) {
+        p:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.foustd_apply {
+  padding-bottom: 100px;
+  .foustd_apply_items {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .foustd_apply_item {
+      float: left;
+      width: 20.625rem;
+      height: 26.25rem;
+      background: #ffffff;
+      box-shadow: -1px 13px 20px 0 #f1f0f4;
+      border-radius: 0.9375rem;
+      overflow: hidden;
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 18rem;
+        height: 23rem;
+      }
+      @media (max-width: 767px) {
+        width: 250px;
+        height: 320px;
+      }
+      img {
+        width: 100%;
+        height: 20.625rem;
+        @media (min-width: 768px) and (max-width: 992px) {
+          height: 18rem;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+      a {
+        display: block;
+        width: 8.125rem;
+        height: 2.125rem;
+        line-height: 2.125rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 0.375rem;
+        background: rgba(38, 89, 255, 0.8);
+        margin: 1.5625rem auto;
+        @media (max-width: 767px) {
+          margin: 15px auto 0;
+        }
+      }
+    }
+    .foustd_apply_item:first-of-type {
+      @media (max-width: 767px) {
+        margin-bottom: 50px;
+      }
+    }
+    .foustd_apply_item:last-child {
+      float: right;
+    }
+  }
+}
+//footer

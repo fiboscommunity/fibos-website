@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="195px" viewBox="0 0 20 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>pointLine160</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1" height="160"></rect>
+    </defs>
+    <g id="现在" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网重构-侧边导航展开" transform="translate(-1055.000000, -4973.000000)">
+            <g id="pointLine160" transform="translate(1055.000000, 4973.000000)">
+                <circle id="椭圆形" stroke="#333333" fill-rule="nonzero" cx="10" cy="185" r="9.5"></circle>
+                <circle id="椭圆形" fill="#333333" fill-rule="nonzero" cx="10" cy="185" r="7"></circle>
+                <g id="矩形" stroke-dasharray="11" transform="translate(9.000000, 0.000000)">
+                    <g id="path-2-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-2"></g>
+                        <path d="M0,0 L1,0 L1,160 L0,160 L0,0 Z" id="path-2" stroke="#333333" stroke-width="2" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

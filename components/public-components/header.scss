@@ -1,0 +1,273 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.index_header {
+  width: 100%;
+  background-color: #000;
+  // overflow: hidden;
+}
+.fousdt_header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.myheader {
+  @media (max-width: 767px) {
+    position: fixed;
+    z-index: 100;
+  }
+  .pc_header {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    .myContainer {
+      display: flex;
+      height: 50px;
+      color: #fff;
+      padding: 0 15px;
+      box-sizing: border-box;
+      .foustd_lang {
+        display: flex;
+        position: relative;
+        align-items: center;
+        height: 100%;
+        img {
+          width: 33px;
+          height: 22px;
+        }
+        .dropDown {
+          position: absolute;
+          z-index: 999;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          padding: 10px;
+          border-radius: 4px;
+          background-color: #fff;
+          display: none;
+        }
+        .show {
+          display: block;
+        }
+      }
+      .foustd_logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        img {
+          width: 98px;
+          height: 36px;
+        }
+      }
+      .foustd_nav {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0 30% 0 10%;
+        position: relative;
+        z-index: 999;
+        div {
+          a.parent_a {
+            display: flex;
+            position: relative;
+            align-items: center;
+            height: 100%;
+            border-top: 1px solid #fff;
+            padding-top: 1px;
+            line-height: 50px;
+            font-size: 18px;
+            color: #fff;
+            border-bottom: 2px solid transparent;
+            -webkit-tap-highlight-color: transparent;
+            transition: color 0.2s;
+            .son_nav {
+              position: absolute;
+              display: block;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              width: max-content;
+              height: auto;
+              font-size: 14px;
+              visibility: hidden;
+              transition: visibility 0.06s;
+              a {
+                border: none;
+                width: auto;
+                color: #fff;
+                margin-right: 20px;
+              }
+              a:last-of-type {
+                margin-right: 0;
+              }
+              a:hover {
+                border-bottom: 2px solid #fff;
+              }
+            }
+          }
+          a.parent_a:hover {
+            border-top: 2px solid #fff !important;
+            border-bottom: 2px solid #fff;
+            padding-top: 0;
+            color: #3574fa;
+            .son_nav {
+              visibility: visible;
+            }
+          }
+        }
+        .noline {
+          a.parent_a:hover {
+            border-bottom: none;
+          }
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        .foustd_nav {
+          margin: 0 15% 0 5%;
+        }
+      }
+    }
+  }
+  .mobile_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202027;
+    // z-index: 100;
+    a {
+      color: #fff;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+    height: 50px;
+    .myContainer {
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      .logo {
+        // float: left;
+        img {
+          width: 98px;
+          height: 36px;
+        }
+      }
+      .navbtn {
+        // float: right;
+        width: 16px;
+        height: 14px;
+        border-radius: 2px;
+        color: white;
+        padding: 5px;
+        border: 1px solid rgba(163, 163, 171, 0.5);
+        box-sizing: content-box;
+        .bar {
+          display: block;
+          width: 10px;
+          height: 1px;
+          margin: 3px auto;
+          background-color: #ccc;
+        }
+      }
+      .nospread {
+        position: fixed;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 15px;
+        z-index: 100;
+        // margin: 0 20px;
+      }
+      nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateY(-100%);
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 0 10px;
+        color: white;
+        transition: all 0.15s linear 0s;
+        z-index: 99;
+        opacity: 0.01;
+        .remain {
+          flex: 1;
+        }
+        .stitle {
+          font-size: 20px;
+          margin: 15px 20px 0;
+        }
+        a {
+          display: block;
+        }
+        .myrow {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          .item {
+            box-sizing: border-box;
+            width: max-content;
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 40px;
+          }
+        }
+        .secondary_menu {
+          height: 0;
+          transition: opacity 1s;
+          margin-top: 0;
+          overflow: hidden;
+          opacity: 0.01;
+        }
+        .secondary_menu_show {
+          height: max-content;
+          margin-top: 15px;
+          background-color: rgba(23, 22, 22, 0.7);
+          opacity: 1;
+        }
+        .foustd_lang {
+          font-size: 20px;
+          img {
+            width: 33px;
+            height: 22px;
+            vertical-align: top;
+          }
+          .dropDown {
+            overflow: hidden;
+            opacity: 0.01;
+            margin-top: 0;
+            height: 0;
+            transition: opacity 1s;
+            > div {
+              display: inline-block;
+              margin-right: 10px;
+            }
+          }
+          .show {
+            height: 22px;
+            margin-top: 15px;
+            opacity: 1;
+          }
+        }
+      }
+      nav.show {
+        opacity: 1;
+        top: 50px;
+        transform: translateY(0);
+      }
+    }
+  }
+}
